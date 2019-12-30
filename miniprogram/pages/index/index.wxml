@@ -1,0 +1,30 @@
+<!--index.wxml-->
+<view class="container">
+    <!-- 内框 -->
+    <view class="main" style="min-height:{{winHeight}}rpx;">
+      <view class="main-text1">
+        <text>{{main_info.title}}</text>
+      </view>
+      <view class="main-mintext1">
+        <text>{{main_info.mintitle}}</text>
+      </view>
+      <view class="main-text2">
+        <!-- <text>活动时间：{{questionnaire.starttime}} - {{questionnaire.endtime}}</text> -->
+      </view>
+      <view class="page-section page-section-spacing swiper">
+        <swiper
+        indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" circular="{{circular}}" vertical="{{vertical}}"
+        interval="{{interval}}" duration="{{duration}}" previous-margin="{{previousMargin}}px" next-margin="{{nextMargin}}px">
+        <block wx:for="{{background}}" wx:key="*this">
+          <swiper-item>
+            <view class="swiper-item {{item}}"></view>
+          </swiper-item>
+        </block>
+        </swiper>
+      </view>
+
+<button bindtap="standard" class="weui-btn" type="default">{{btnName}}</button>
+<button bindtap="standard" class="weui-btn" type="default">{{btnName2}}</button>
+<button bindtap="addform" class="weui-btn" type="primary">人工智能自动生成</button>
+    </view>
+</view>

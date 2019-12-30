@@ -1,0 +1,57 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/userConsole/userConsole",
+    "pages/storageConsole/storageConsole",
+    "pages/databaseGuide/databaseGuide",
+    "pages/addFunction/addFunction",
+    "pages/deployFunctions/deployFunctions",
+    "pages/chooseLib/chooseLib",
+    "pages/openapi/openapi",
+    "pages/openapi/serverapi/serverapi",
+    "pages/openapi/callback/callback",
+    "pages/openapi/cloudid/cloudid",
+    "pages/im/im",
+    "pages/im/room/room",
+    "pages/index_test/index_test",
+    "pages/adduploadform/adduploadform",
+    "pages/standard/standard",
+    "pages/formsuccess/formsuccess",
+    "pages/center/center",
+    "pages/preview/preview"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "离婚智能协议助手",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/main.png",
+        "selectedIconPath": "images/main_select.png",
+        "selectedColor": "#001110"
+      },
+      {
+        "pagePath": "pages/center/center",
+        "text": "个人中心",
+        "iconPath": "images/center.png",
+        "selectedIconPath": "images/center_select.png",
+        "selectedColor": "#001110"
+      },
+      {
+        "pagePath": "pages/index_test/index_test",
+        "text": "测试页面",
+        "iconPath": "images/center.png",
+        "selectedIconPath": "images/center_select.png",
+        "selectedColor": "#001110"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}

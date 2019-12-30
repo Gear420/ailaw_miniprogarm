@@ -1,0 +1,29 @@
+@import '../../weui.wxss';
+/* pages/standard/standard.wxss */
+.weui-btn{
+  width:50%
+}
+.main-text1{
+  width:100%;
+  height:80rpx;
+  margin-top:20rpx;
+  line-height:80rpx;
+  text-align: center;
+}
+.main-text1 text{
+  font-size:40rpx;
+  color:#387CC5;
+  font-weight:900;
+}
+.main-content{
+  width:90%;
+  height:auto;
+  min-height:1000rpx;
+  margin:0rpx 30rpx 48rpx;
+  line-height:45rpx;
+}
+.image{
+  
+  width:623rpx;
+  height:678rpx;
+}

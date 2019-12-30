@@ -1,0 +1,13 @@
+<!--miniprogram/pages/standard/standard.wxml-->
+<!--pages/standard/standard.wxml-->
+<view class="container">
+    <view class="main" style="min-height:{{winHeight}}rpx;">
+      <view class="main-text1">
+        <text>{{title}}</text>
+      </view>
+      <image class="image"src="../../images/test1.png"></image>
+      <button class="weui-btn" bindtap="pay" type="primary">立即购买</button>
+      <view class="main-content">
+      </view>
+    </view>
+</view>
