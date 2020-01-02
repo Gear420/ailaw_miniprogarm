@@ -14,11 +14,12 @@
     "pages/im/im",
     "pages/im/room/room",
     "pages/index_test/index_test",
-    "pages/adduploadform/adduploadform",
+    "pages/adduploadForm/adduploadform",
     "pages/standard/standard",
     "pages/formsuccess/formsuccess",
     "pages/center/center",
-    "pages/preview/preview"
+    "pages/preview/preview",
+    "pages/download/download"
   ],
   "window": {
     "backgroundColor": "#F6F6F6",

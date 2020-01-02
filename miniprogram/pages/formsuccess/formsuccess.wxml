@@ -1,2 +1,9 @@
-<!--miniprogram/pages/formsuccess/formsuccess.wxml-->
-<text>miniprogram/pages/formsuccess/formsuccess.wxml</text>
+<!--pages/formsuccess/formsuccess.wxml-->
+<view class="container">
+  <view class="main" style="min-height:{{winHeight}}rpx;">
+    <image class="success-img" src='../../image/notice2.png'></image>
+    <text class="success-info">提交成功，您的下载码为:wxd74fb21c2e7c623f</text>
+    <image class="code-img" bindtap="longpress"  src='../../image/code.jpeg'></image>
+    <text class="code-info">点击关注公众号</text>
+  </view>
+</view>

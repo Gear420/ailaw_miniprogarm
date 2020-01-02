@@ -1,4 +1,4 @@
-// miniprogram/pages/formsuccess/formsuccess.js
+// miniprogram/pages/download/download.js
 Page({
 
   /**
@@ -8,13 +8,17 @@ Page({
 
   },
 
-  longpress: function (e) {
-    wx.previewImage({
-      current: this.data.imageArr,
-      urls: this.data.imageArr,
+  downloadfile: function(){
+    wx.cloud.downloadFile({
+      fileID: 'cloud://ailaw.6169-ailaw-1301005867/my-image.jpeg',
+      success: res => {
+
+        console.log(res.tempFilePath)
+      },
+      fail: err => {
+      }
     })
   },
-
   /**
    * 生命周期函数--监听页面加载
    */

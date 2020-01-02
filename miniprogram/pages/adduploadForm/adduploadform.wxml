@@ -1,2 +1,158 @@
 <!--pages/adduploadform/adduploadform.wxml-->
-<text>pages/adduploadform/adduploadform.wxml</text>
+<!--pages/addform/addform.wxml-->
+<block wx:if="{{index==0}}">
+<progress percent="14" active></progress>
+</block>
+
+<block wx:if="{{index==1}}">
+<progress percent='28' active>{{percent_data}}</progress>
+</block>
+
+<block wx:if="{{index==2}}">
+<progress percent='42' active>{{percent_data}}</progress>
+</block>
+
+<block wx:if="{{index==3}}">
+<progress percent='56' active>{{percent_data}}</progress>
+</block>
+
+<block wx:if="{{index==4}}">
+<progress percent="70" active>{{percent_data}}</progress>
+</block>
+
+<block wx:if="{{index==5}}">
+<progress percent="84" active>{{percent_data}}</progress>
+</block>
+
+<block wx:if="{{index==6}}">
+<progress percent="100" active>{{percent_data}}</progress>
+</block>
+
+
+
+
+<view class='container'>
+  <view class="main" style="min-height:{{winHeight}}rpx;">
+    <view class="main-img">
+      <image src="../../images/tu2.png"></image>
+    </view>
+  <view class="form-content">
+
+
+<form bindsubmit="formSubmit" bindreset="formReset">
+  <block wx:if="{{index==0}}">
+  <view class="section section_gap">
+      <view class="weui-article__h1">{{questionnaire.form_picker1}}</view> 
+       <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell ">
+                <view class="weui-cell__bd">
+                    <input bindtap='recover_qindex' class="weui-input" placeholder="请输入文本" />
+                </view>
+            </view>
+        </view>
+    </view>
+    <view class="weui-btn" type="primary" bindtap="indexPlus"></view>
+    <button class="weui-btn" type="primary" bindtap="indexPlus">下一题</button>
+  </block>
+   
+
+  <block wx:if="{{index==1}}">
+  <view class="weui-article__h1">{{questionnaire.form_picker2}}</view> 
+        <view class="weui-cells weui-cells_after-title">
+            <radio-group bindchange="radioChange">
+                <label class="weui-cell weui-check__label" wx:for="{{radioItems}}" wx:key="value">
+                    <radio class="weui-check" value="{{item.value}}" checked="{{item.checked}}"/>
+                    <view class="weui-cell__bd">{{item.name}}</view>
+                    <view class="weui-cell__ft weui-cell__ft_in-radio" wx:if="{{item.checked}}">
+                        <icon class="weui-icon-radio" type="success_no_circle" size="16"></icon>
+                    </view>
+                </label>
+            </radio-group>
+        </view>
+    <view class="weui-btn" type="primary" bindtap="indexPlus"></view>
+    <button class="weui-btn" type="primary" bindtap="indexPlus">下一题</button>
+  </block>
+
+  <block wx:if="{{index==2}}">
+  <view class="weui-article__h1">{{questionnaire.form_picker3}}</view> 
+    <view class="weui-cell weui-cell_select">
+      <view class="weui-cell__bd">
+        <picker bindtap="recover_qindex" bindchange="bindAccountChange" value="{{questionnaire_index.form_picker3}}" range="{{questionnaire_data.form_picker3}}">
+          <view class="weui-select">{{questionnaire_data.form_picker3[qindex]}}</view>
+        </picker>
+      </view>
+    </view>
+    <block wx:for='{{qindex}}'>
+    <picker bindtap="recover_qindex" bindchange="bindAccountChange" value="{{questionnaire_index.form_picker3_1}}" range="{{questionnaire_data.form_picker3_1}}">
+      <view class="weui-select">{{questionnaire_data.form_picker3_1[qindex]}}</view>
+    </picker>
+    <picker bindtap="recover_qindex" bindchange="bindAccountChange" value="{{questionnaire_index.form_picker3_2}}" range="{{questionnaire_data.form_picker3_2}}">
+    <view class="weui-select">{{questionnaire_data.form_picker3_2[qindex]}}</view>
+    </picker>
+    </block>
+    <view class="weui-btn" type="primary" bindtap="indexPlus"></view>
+    <button class="weui-btn" type="primary" bindtap="indexPlus">下一题</button>
+  </block>
+
+  <block wx:if="{{index==3}}">
+  <view class="weui-article__h1">{{questionnaire.form_picker4}}</view> 
+    <view class="weui-cell weui-cell_select">
+      <view class="weui-cell__bd">
+        <picker bindtap="recover_qindex" bindchange="bindAccountChange" value="{{questionnaire_index.form_picker4}}" range="{{questionnaire_data.form_picker4}}">
+          <view class="weui-select">{{questionnaire_data.form_picker4[qindex]}}</view>
+        </picker>
+      </view>
+    </view>
+    <view class="weui-btn" type="primary" bindtap="indexPlus"></view>
+    <button class="weui-btn" type="primary" bindtap="indexPlus">下一题</button>
+  </block>
+
+  <block wx:if="{{index==4}}">
+  <view class="weui-article__h1">{{questionnaire.form_picker5}}</view> 
+    <view class="weui-cell weui-cell_select">
+      <view class="weui-cell__bd">
+        <picker bindtap="recover_qindex" bindchange="bindAccountChange" value="{{questionnaire_index.form_picker5}}" range="{{questionnaire_data.form_picker5}}">
+          <view class="weui-select">{{questionnaire_data.form_picker5[qindex]}}</view>
+        </picker>
+      </view>
+    </view>
+    <view class="weui-btn" type="primary" bindtap="indexPlus"></view>
+    <button class="weui-btn" type="primary" bindtap="indexPlus">下一题</button>
+  </block>
+
+
+  <block wx:if="{{index==5}}">
+  <view class="weui-article__h1">{{questionnaire.form_picker6}}</view> 
+    <view class="weui-cell weui-cell_select">
+      <view class="weui-cell__bd">
+        <picker bindtap="recover_qindex"  bindchange="bindAccountChange" value="{{questionnaire_index.form_picker6}}" range="{{questionnaire_data.form_picker6}}">
+          <view class="weui-select">{{questionnaire_data.form_picker6[qindex]}}</view>
+        </picker>
+      </view>
+    </view>
+    <view class="weui-btn" type="primary" bindtap="indexPlus"></view>
+    <button class="weui-btn" type="primary" bindtap="indexPlus">下一题</button>
+  </block>
+
+  <block wx:if="{{index==6}}">
+  <view class="weui-article__h1">{{questionnaire.form_picker7}}</view> 
+    <view class="weui-cell weui-cell_select">
+      <view class="weui-cell__bd">
+        <picker bindtap="recover_qindex" bindchange="bindAccountChange" value="{{questionnaire_index.form_picker2}}" range="{{questionnaire_data.form_picker2}}">
+          <view class="weui-select">{{questionnaire_data.form_picker7[qindex]}}</view>
+        </picker>
+      </view>
+    </view>
+    <view class="weui-btn" type="primary" bindtap="indexPlus"></view>
+    <button class="weui-btn" type="primary" bindtap="indexPlus">下一题</button>
+  </block>
+
+  <block wx:if="{{index==7}}">
+  <view class="weui-article__h1">您已经写完了所有问题，请点击提交</view> 
+  <button class="weui-btn" type="primary" formType="submit">提交</button>
+  </block>
+  
+</form>
+</view>
+</view>
+</view>

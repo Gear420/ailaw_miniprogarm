@@ -28,7 +28,7 @@ Page({
   },
   addform: function (event) {
     wx.navigateTo({
-      url: '../adduploadForm/adduploadForm'
+      url: '../adduploadForm/adduploadform'
     })
   },
   onShareAppMessage: function () {

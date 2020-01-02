@@ -1,4 +1,5 @@
 // miniprogram/pages/center/center.js
+//从数据库获取数据
 Page({
 
   /**
@@ -7,6 +8,7 @@ Page({
   data: {
 
   },
+
 
   /**
    * 生命周期函数--监听页面加载

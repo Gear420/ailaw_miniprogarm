@@ -1,6 +1,7 @@
 //获取云实例
 const cloud = require('wx-server-sdk')
 //云初始化
+const crypto = require("crypto")
 cloud.init()
 //获取微信调用上下文信息，其中包括Openid，Appid等
 const wxContext = cloud.getWXContext()

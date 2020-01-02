@@ -1,0 +1,3 @@
+<!--miniprogram/pages/download/download.wxml-->
+<text>购买成功，请点击下载</text>
+<button bindtap="downloadfile">点击下载</button>

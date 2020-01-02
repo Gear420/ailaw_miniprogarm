@@ -1,1 +1,131 @@
 /* pages/adduploadform/adduploadform.wxss */
+
+
+@import '../../weui.wxss';
+/* pages/addform/addform.wxss */
+.weui-btn{
+  margin-bottom: 200px
+}
+.show{
+  display:block;
+}
+.hide{
+  display:none;
+}
+.main-img{
+  width:650rpx;
+  height:auto;
+  margin:20rpx auto;
+}
+.main-img>image{
+  width:650rpx;
+  height:400rpx;
+}
+.form-content{
+  width:620rpx;
+  margin:30rpx auto;
+}
+.form-title{
+  font-size:31rpx;
+  color:#387CC5;
+  font-weight:700;
+  margin-bottom:50rpx;
+}
+.section_gap{
+  color:#545454;
+  font-weight:800;
+  font-size:30rpx;
+}
+.section_gap .section__title{
+  color:#545454;
+  font-weight:800;
+  font-size:32rpx;
+  margin:70rpx 0rpx 20rpx;
+  line-height:55rpx;
+}
+.section_gap .picker{
+  width:540rpx;
+  height:60rpx;
+  border:1rpx solid #B8B8B8;
+  border-radius:30rpx;
+  margin:10rpx auto;
+  padding:0rpx 30rpx;
+  line-height:60rpx;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+  font-weight:300;
+}
+.form-content .info{
+  color:#A9A9A9;
+  font-size:22rpx;
+  display:block;
+  margin:50rpx 0rpx;
+}
+.form-content .info .info2{
+  color:#f00;
+}
+.section_gap .radio,.checkbox{
+  color:#666666;
+  display:block;
+  margin:50rpx 0rpx 20rpx -10rpx;
+  transform:scale(0.9);
+  font-weight:300;
+}
+.textarea-style{
+  background:#eee;
+  width:600rpx;
+  min-height:200rpx;
+  padding:10rpx;
+  font-weight:300;
+}
+.section_gap .radio-input{
+  width:540rpx;
+  height:60rpx;
+  border:1rpx solid #B8B8B8;
+  border-radius:30rpx;
+  margin:10rpx auto;
+  padding:0rpx 30rpx;
+  line-height: 60rpx;
+}
+/* 提交按钮 */
+.main-btn{
+  width:500rpx;
+  height:120rpx;
+  margin:50rpx auto 0rpx;
+  text-align:center;
+  color:#ffffff;
+  line-height:95rpx;
+  position: relative;
+}
+.main-btn image{
+  width:100%;
+  height:100%;
+}
+.main-btn button{
+  font-size:28rpx;
+  width:465rpx;
+  opacity:0;
+    height: 75rpx; 
+    line-height: 120rpx;
+    border-radius:60rpx;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index:10;
+    margin-top: -47rpx;
+    margin-left: -232rpx;
+}
+.main-btn>text{
+  font-size:28rpx;
+  width:100%;
+    height: 40rpx;
+    line-height: 40rpx;
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -30rpx;
+    margin-left: -250rpx;
+}

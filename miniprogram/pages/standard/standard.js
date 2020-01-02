@@ -16,6 +16,11 @@ Page({
     title: '模板预览',
     winHeight: 1150,
   },
+  todownload: function(){
+    wx.navigateTo({
+      url: '../../pages/download/download',
+    })
+  },
   pay: function(){
     let uploadData = {
       "total_fee": "666",
